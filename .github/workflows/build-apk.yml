@@ -22,6 +22,10 @@ jobs:
           rm -rf project
           mkdir project
           unzip -q CongViecHangNgay_GitHub_v2_UPLOAD.zip -d project
+
+          echo "android.useAndroidX=true" > project/gradle.properties
+          echo "android.enableJetifier=true" >> project/gradle.properties
+
           echo "Project files:"
           find project -maxdepth 3 -type f | sort
 

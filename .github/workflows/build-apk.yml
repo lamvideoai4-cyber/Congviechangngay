@@ -17,7 +17,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-       - name: Extract Android project
+      - name: Extract Android project
         run: |
           rm -rf project
           mkdir project

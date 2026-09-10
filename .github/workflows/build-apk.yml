@@ -16,7 +16,7 @@ jobs:
       # Tự động giải nén file zip nguồn ra thư mục chính
       - name: Extract zip source
         run: |
-          unzip -o CongViecHangNgay_GitHub_v2_UPLOAD.zip
+          unzip -o congviecpro-pwa-fix1.zip
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4

@@ -34,7 +34,7 @@ jobs:
           echo "android.enableJetifier=true" >> ~/.gradle/gradle.properties
 
       - name: Build Debug APK
-        run: gradle assembleDebug
+        run: cd android && gradle assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4

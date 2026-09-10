@@ -36,7 +36,7 @@ jobs:
       - name: Build Debug APK
         run: cd android && gradle assembleDebug
         env:
-          APP_URL: https://hds-lzpwzngdwl6c-6014-ehfwj.grok-code-wild.hades-www.grok-sandbox.com/
+          APP_URL:https://congviecpro-review.netlify.app/attendance 
 
       - name: Upload APK
         uses: actions/upload-artifact@v4

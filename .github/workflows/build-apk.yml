@@ -34,7 +34,9 @@ jobs:
           echo "android.enableJetifier=true" >> ~/.gradle/gradle.properties
 
       - name: Build Debug APK
-        run: cd android && gradle assembleDebug
+  run: cd android && gradle assembleDebug
+  env:
+    APP_URL: https://hds-lzpwzngdwl6c-6014-ehfwj.grok-code-wild.hades-www.grok-sandbox.com/
 
       - name: Upload APK
         uses: actions/upload-artifact@v4

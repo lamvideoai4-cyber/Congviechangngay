@@ -1,0 +1,25 @@
+plugins {
+    id 'com.android.application'
+}
+
+def appUrl = providers.environmentVariable("APP_URL")
+    .orElse("https://example.com")
+    .get()
+
+android {
+    namespace 'com.congviecpro.app'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.congviecpro.app'
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName '1.0.0'
+        buildConfigField 'String', 'APP_URL', '"' + appUrl.replace('\\', '\\\\').replace('"', '\\"') + '"'
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+}

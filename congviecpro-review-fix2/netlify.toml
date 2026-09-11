@@ -1,3 +1,3 @@
 [build]
-  command = "npm run build"
-  publish = "dist"
+  command = "cd congviecpro-review-fix2 && npm run build"
+  publish = "congviecpro-review-fix2/dist"
